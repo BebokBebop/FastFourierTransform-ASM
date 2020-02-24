@@ -1,0 +1,441 @@
+Renderer.1 {
+    backgroundcolor = #F5F5F5;
+    backgroundcolordisabled = #E6E6E6;
+    backgroundcolordown = #EBEBEB;
+    backgroundcolorhover = white;
+    bordercolor = #3C3C3C;
+    bordercolordisabled = #7D7D7D;
+    bordercolordown = black;
+    bordercolorfocused = #1E1EB4;
+    bordercolorhover = black;
+    borders = (1, 1, 1, 1);
+    textcolor = #3C3C3C;
+    textcolordisabled = #7D7D7D;
+    textcolordown = black;
+    textcolorhover = black;
+    texture = None;
+    texturedisabled = None;
+    texturedown = None;
+    texturefocused = None;
+    texturehover = None;
+}
+
+Renderer.2 {
+    bordercolor = #3C3C3C;
+    bordercolorhover = black;
+    borders = (1, 1, 1, 1);
+    texturethumb = None;
+    texturethumbhover = None;
+    texturetrack = None;
+    texturetrackhover = None;
+    thumbcolor = #F5F5F5;
+    thumbcolorhover = white;
+    trackcolor = #F5F5F5;
+    trackcolorhover = white;
+}
+
+Renderer.3 {
+    backgroundcolor = #F5F5F5;
+    backgroundcolordisabled = #E6E6E6;
+    backgroundcolorhover = white;
+    bordercolor = #3C3C3C;
+    bordercolordisabled = #7D7D7D;
+    bordercolorfocused = #1E1EB4;
+    bordercolorhover = black;
+    borders = (1, 1, 1, 1);
+    checkcolor = #3C3C3C;
+    checkcolordisabled = #7D7D7D;
+    checkcolorhover = black;
+    textcolor = #3C3C3C;
+    textcolordisabled = #7D7D7D;
+    textcolorhover = black;
+    textdistanceratio = 0.2;
+    texturechecked = None;
+    texturecheckeddisabled = None;
+    texturecheckedfocused = None;
+    texturecheckedhover = None;
+    textureunchecked = None;
+    textureuncheckeddisabled = None;
+    textureuncheckedfocused = None;
+    textureuncheckedhover = None;
+}
+
+Renderer.4 {
+    backgroundcolor = white;
+    bordercolor = black;
+    borders = (1, 1, 1, 1);
+    caretcolor = black;
+    caretwidth = 1;
+    padding = (0, 0, 0, 0);
+    selectedtextbackgroundcolor = #006EFF;
+    selectedtextcolor = white;
+    textcolor = #3C3C3C;
+    texturebackground = None;
+}
+
+ComboBox.ComboBox1 {
+    ChangeItemOnScroll = true;
+    ExpandDirection = Down;
+    Items = [chameleon, gymno, sweep, sintra, megalovania];
+    ItemsToDisplay = 0;
+    MaximumItems = 0;
+    Position = (140, 20);
+    Size = (232, 22);
+    TextSize = 13;
+
+    Renderer {
+        arrowbackgroundcolor = #F5F5F5;
+        arrowbackgroundcolorhover = white;
+        arrowcolor = #3C3C3C;
+        arrowcolorhover = black;
+        backgroundcolor = #F5F5F5;
+        bordercolor = black;
+        borders = (1, 1, 1, 1);
+        padding = (0, 0, 0, 0);
+        textcolor = #3C3C3C;
+        texturearrow = None;
+        texturearrowhover = None;
+        texturebackground = None;
+    }
+}
+
+Button.PauseButton {
+    Position = (480, 140);
+    Size = (50, 22);
+    Text = PAUSE;
+    TextSize = 13;
+    renderer = &1;
+}
+
+Button.StopButton {
+    Position = (620, 140);
+    Size = (50, 22);
+    Text = STOP;
+    TextSize = 13;
+    renderer = &1;
+}
+
+Button.PlayButton {
+    Position = (550, 140);
+    Size = (50, 22);
+    Text = PLAY;
+    TextSize = 13;
+    renderer = &1;
+}
+
+ProgressBar.ProgressBar1 {
+    Maximum = 100;
+    Minimum = 0;
+    Position = (400, 110);
+    Size = (360, 22);
+    TextSize = 13;
+    Value = 0;
+
+    Renderer {
+        backgroundcolor = #F5F5F5;
+        bordercolor = black;
+        borders = (1, 1, 1, 1);
+        fillcolor = #006EFF;
+        textcolor = #3C3C3C;
+        textcolorfilled = white;
+        texturebackground = None;
+        texturefill = None;
+    }
+}
+
+Label.Label1 {
+    HorizontalAlignment = Center;
+    Position = (540, 90);
+    ScrollbarPolicy = Never;
+    Size = (77.2, 18);
+    Text = "Progress:";
+    TextSize = 15;
+
+    Renderer {
+        backgroundcolor = transparent;
+        bordercolor = black;
+        borders = (0, 0, 0, 0);
+        textcolor = white;
+        textoutlinecolor = black;
+        textoutlinethickness = 2;
+        texturebackground = None;
+    }
+}
+
+Label.Label2 {
+    HorizontalAlignment = Center;
+    Position = (70, 20);
+    ScrollbarPolicy = Never;
+    Size = (67.2, 18);
+    Text = Sample;
+    TextSize = 15;
+
+    Renderer {
+        backgroundcolor = transparent;
+        bordercolor = #3C3C3C;
+        borders = (0, 0, 0, 0);
+        textcolor = white;
+        textoutlinecolor = black;
+        textoutlinethickness = 2;
+        texturebackground = None;
+    }
+}
+
+TextBox.TextBox1 {
+    HorizontalScrollbarPolicy = Never;
+    MaximumCharacters = 0;
+    Position = (303, 110);
+    ReadOnly = true;
+    Size = (68, 20);
+    Text = "";
+    TextSize = 13;
+    renderer = &4;
+}
+
+TextBox.TextBox3 {
+    HorizontalScrollbarPolicy = Never;
+    MaximumCharacters = 0;
+    Position = (303, 140);
+    ReadOnly = true;
+    Size = (68, 20);
+    Text = "";
+    TextSize = 13;
+    renderer = &4;
+}
+
+Label.Label3 {
+    AutoSize = true;
+    Position = (150, 110);
+    ScrollbarPolicy = Never;
+    Size = (145.6, 20);
+    Text = "Time per sample:";
+    TextSize = 15;
+
+    Renderer {
+        backgroundcolor = transparent;
+        bordercolor = #3C3C3C;
+        borders = (0, 0, 0, 0);
+        textcolor = white;
+        textoutlinecolor = black;
+        textoutlinethickness = 2;
+        texturebackground = None;
+    }
+}
+
+Label.Label4 {
+    AutoSize = true;
+    Position = (130, 140);
+    ScrollbarPolicy = Never;
+    Size = (165.6, 20);
+    Text = "Average Time of 50:";
+    TextSize = 15;
+
+    Renderer {
+        backgroundcolor = transparent;
+        bordercolor = #3C3C3C;
+        borders = (0, 0, 0, 0);
+        textcolor = white;
+        textoutlinecolor = black;
+        textoutlinethickness = 2;
+        texturebackground = None;
+    }
+}
+
+Slider.Slider1 {
+    ChangeValueOnScroll = true;
+    InvertedDirection = false;
+    Maximum = 64;
+    Minimum = 1;
+    Position = (400, 60);
+    Size = (360, 10);
+    Step = 1;
+    Value = 8;
+    renderer = &2;
+}
+
+Button.OpenButton {
+    Position = (320, 60);
+    Text = Open;
+    TextSize = 13;
+    renderer = &1;
+}
+
+TextBox.TextBox2 {
+    HorizontalScrollbarPolicy = Never;
+    MaximumCharacters = 0;
+    Position = (140, 60);
+    Size = (178, 21.5191);
+    Text = "";
+    TextSize = 13;
+    renderer = &4;
+}
+
+Label.CustomSample {
+    AutoSize = true;
+    HorizontalAlignment = Center;
+    Position = (10, 60);
+    ScrollbarPolicy = Never;
+    Size = (122.6, 20);
+    Text = "Custom Sample";
+    TextSize = 15;
+
+    Renderer {
+        backgroundcolor = transparent;
+        bordercolor = #3C3C3C;
+        borders = (0, 0, 0, 0);
+        textcolor = white;
+        textoutlinecolor = black;
+        textoutlinethickness = 2;
+        texturebackground = None;
+    }
+}
+
+Label.Label6 {
+    Position = (510, 20);
+    ScrollbarPolicy = Never;
+    Size = (69.6, 20);
+    Text = "Threads:";
+    TextSize = 15;
+
+    Renderer {
+        backgroundcolor = transparent;
+        bordercolor = #3C3C3C;
+        borders = (0, 0, 0, 0);
+        textcolor = white;
+        textoutlinecolor = black;
+        textoutlinethickness = 2;
+        texturebackground = None;
+    }
+}
+
+Label.Label7 {
+    Position = (405, 39);
+    ScrollbarPolicy = Never;
+    Size = (17.2, 18);
+    Text = 1;
+    TextSize = 15;
+
+    Renderer {
+        backgroundcolor = transparent;
+        bordercolor = #3C3C3C;
+        borders = (0, 0, 0, 0);
+        textcolor = white;
+        textoutlinecolor = black;
+        textoutlinethickness = 2;
+        texturebackground = None;
+    }
+}
+
+Label.Label8 {
+    Position = (730, 39);
+    ScrollbarPolicy = Never;
+    Size = (27.2, 18);
+    Text = 64;
+    TextSize = 15;
+
+    Renderer {
+        backgroundcolor = transparent;
+        bordercolor = #3C3C3C;
+        borders = (0, 0, 0, 0);
+        textcolor = white;
+        textoutlinecolor = black;
+        textoutlinethickness = 2;
+        texturebackground = None;
+    }
+}
+
+RadioButton.RadioButton1 {
+    Checked = true;
+    Position = (20, 110);
+    Size = (18, 18);
+    TextSize = 13;
+    renderer = &3;
+}
+
+RadioButton.RadioButton2 {
+    Position = (20, 140);
+    Size = (18, 18);
+    TextSize = 13;
+    renderer = &3;
+}
+
+Label.Label5 {
+    AutoSize = true;
+    Position = (50, 110);
+    ScrollbarPolicy = Never;
+    Size = (32.2, 18);
+    Text = "C++";
+    TextSize = 13;
+
+    Renderer {
+        backgroundcolor = transparent;
+        bordercolor = #3C3C3C;
+        borders = (0, 0, 0, 0);
+        textcolor = white;
+        textoutlinecolor = black;
+        textoutlinethickness = 2;
+        texturebackground = None;
+    }
+}
+
+Label.Label9 {
+    AutoSize = true;
+    Position = (50, 140);
+    ScrollbarPolicy = Never;
+    Size = (30.2, 18);
+    Text = ASM;
+    TextSize = 13;
+
+    Renderer {
+        backgroundcolor = transparent;
+        bordercolor = #3C3C3C;
+        borders = (0, 0, 0, 0);
+        textcolor = white;
+        textoutlinecolor = black;
+        textoutlinethickness = 2;
+        texturebackground = None;
+    }
+}
+
+TextBox.ThreadNumber {
+    HorizontalScrollbarPolicy = Never;
+    MaximumCharacters = 2;
+    Position = (580, 20);
+    ReadOnly = true;
+    Size = (28, 20);
+    Text = "";
+    TextSize = 13;
+    renderer = &4;
+}
+
+Slider.Slider2 {
+    ChangeValueOnScroll = true;
+    InvertedDirection = false;
+    Maximum = 2;
+    Minimum = 0.1;
+    Position = (755, 180);
+    Size = (15, 220);
+    Step = 0.01;
+    Value = 1;
+    renderer = &2;
+}
+
+Label.Label10 {
+    AutoSize = true;
+    Position = (743, 160);
+    ScrollbarPolicy = Never;
+    Size = (41.2, 20);
+    Text = Boost;
+    TextSize = 13;
+
+    Renderer {
+        backgroundcolor = transparent;
+        bordercolor = black;
+        borders = (0, 0, 0, 0);
+        padding = (1, 1, 1, 1);
+        textcolor = white;
+        textoutlinecolor = black;
+        textoutlinethickness = 2;
+        texturebackground = None;
+    }
+}
